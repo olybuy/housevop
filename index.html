@@ -8,133 +8,182 @@
 </head>
 <body class="page">
 <header class="page__header header">
-    <a class="header__logo logo">
-        <img class="logo__image" src="" alt="Надпись HouseVOP.">
-        <span>ЖИЛОЙ КОМПЛЕКС</span>
-    </a>
-    <nav class="header__nav nav">
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a class="nav__link">О комплексе</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link">Район</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link">Каталог квартир</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link">Ипотека</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-    <h1>Жилой комплекс в историческом центре</h1>
-    <div class="header__contacts">
-        <span class="header__address">Наб. реки Фонтанки 10-15</span>
-        <span class="header__phone">8 (812) 123-45-67</span>
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="header__logo logo">
+                <img class="logo__image" src="" alt="Надпись HouseVOP.">
+                <span class="logo__note">ЖИЛОЙ КОМПЛЕКС</span>
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link">О комплексе</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Район</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Каталог квартир</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Ипотека</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="header__title title">Жилой комплекс в историческом центре</h1>
+        <div class="header__contacts">
+            <span class="header__address">Наб. реки Фонтанки 10-15</span>
+            <span class="header__phone">8 (812) 123-45-67</span>
+        </div>
     </div>
 </header>
 <main class="page__main main">
     <section class="main__advantages advantages">
-        <ul class="advantages__list">
-            <li class="advantages__item">Рядом исторические парки и скверы</li>
-            <li class="advantages__item">Полностью обустроенный</li>
-            <li class="advantages__item">10 фонтанов на территории</li>
-            <li class="advantages__item">6 км велодорожек</li>
-        </ul>
+        <div class="container">
+            <ul class="advantages__list">
+                <li class="advantages__item">Рядом исторические парки и скверы</li>
+                <li class="advantages__item">Полностью обустроенный</li>
+                <li class="advantages__item">10 фонтанов на территории</li>
+                <li class="advantages__item">6 км велодорожек</li>
+            </ul>
+        </div>
     </section>
     <section class="main__flats flats">
-        <h2 class="flats__title">Наши квартиры</h2>
-        <ul class="flats__list">
-            <li class="flats__item flat">
-                <a class="flat__link" href="#">
-                    <span class="flat__title">Лофт — 3 этажа</span>
-                </a>
+        <div class="container">
+            <h2 class="flats__title title">Наши квартиры</h2>
+            <ul class="flats__list">
+                <li class="flats__item flat">
+                    <a class="flat__link" href="#">
+                        <span class="flat__title">Лофт — 3 этажа</span>
+                    </a>
 
-            </li>
-            <li class="flats__item flat">
-                <a class="flat__link" href="#">
-                    <span class="flat__title">Лофт — 2 этажа</span>
-                </a>
-            </li>
-            <li class="flats__item flat">
-                <a class="flat__link" href="#">
-                    <span class="flat__title">Лофт — 3 этажа</span>
-                </a>
-            </li>
-            <li class="flats__item flat">
-                <a class="flat__link" href="#">
-                    <span class="flat__title">Лофт — 2 этажа</span>
-                </a>
-            </li>
-        </ul>
+                </li>
+                <li class="flats__item flat">
+                    <a class="flat__link" href="#">
+                        <span class="flat__title">Лофт — 2 этажа</span>
+                    </a>
+                </li>
+                <li class="flats__item flat">
+                    <a class="flat__link" href="#">
+                        <span class="flat__title">Лофт — 3 этажа</span>
+                    </a>
+                </li>
+                <li class="flats__item flat">
+                    <a class="flat__link" href="#">
+                        <span class="flat__title">Лофт — 2 этажа</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
     <section class="main__order order">
-        <h2 class="order__title">Хотите посмотреть?</h2>
-        <p class="order__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-        <form class="order__form order-form" method="post" action="">
-            <label class="order-form__label">
-                <input class="order-form__input" type="text">
-                <span class="visually-hidden">Введите ваше имя</span>
-            </label>
-            <label class="order-form__label">
-                <input class="order-form__input" type="text">
-                <span class="visually-hidden">Введите ваш телефон</span>
-            </label>
-            <button class="order-form__button">Посмотреть район</button>
-            <span class="order-form__note">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
-        </form>
-        <div class="order__video video"></div>
+        <div class="container">
+            <h2 class="order__title title">Хотите посмотреть?</h2>
+            <p class="order__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+            <form class="order__form order-form" method="post" action="">
+                <label class="order-form__label">
+                    <input class="order-form__input" type="text">
+                    <span class="visually-hidden">Введите ваше имя</span>
+                </label>
+                <label class="order-form__label">
+                    <input class="order-form__input" type="text">
+                    <span class="visually-hidden">Введите ваш телефон</span>
+                </label>
+                <button class="order-form__button">Посмотреть район</button>
+                <span class="order-form__note">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
+            </form>
+            <div class="order__video video"></div>
+        </div>
     </section>
     <section class="main__district district">
-        <h2 class="district__title">Район на карте</h2>
-        <div class="district__map"></div>
+        <div class="container">
+            <h2 class="district__title title">Район на карте</h2>
+            <div class="district__map"></div>
+        </div>
     </section>
     <section class="main__questions questions">
-        <h2 class="questions__title">Есть вопросы?</h2>
-        <form class="questions__form order-form" method="post" action="">
-            <label class="order-form__label">
-                <input class="order-form__input" type="text">
-                <span class="visually-hidden">Введите ваше имя</span>
-            </label>
-            <label class="order-form__label">
-                <input class="order-form__input" type="text">
-                <span class="visually-hidden">Введите ваш телефон</span>
-            </label>
-            <button class="order-form__button">Посмотреть район</button>
-            <span class="order-form__note">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
-        </form>
+        <div class="container">
+            <h2 class="questions__title title">Есть вопросы?</h2>
+            <form class="questions__form order-form" method="post" action="">
+                <label class="order-form__label">
+                    <input class="order-form__input" type="text">
+                    <span class="visually-hidden">Введите ваше имя</span>
+                </label>
+                <label class="order-form__label">
+                    <input class="order-form__input" type="text">
+                    <span class="visually-hidden">Введите ваш телефон</span>
+                </label>
+                <button class="order-form__button">Посмотреть район</button>
+                <span class="order-form__note">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</span>
+            </form>
+        </div>
     </section>
 </main>
 <footer class="page__footer footer">
-    <a class="footer__logo logo">
-        <img class="logo__image" src="" alt="Надпись HouseVOP.">
-        <span>ЖИЛОЙ КОМПЛЕКС</span>
-    </a>
-    <ul class="footer__list"></ul>
-    <div class="footer__contacts contacts">
-        <span class="contacts__address"></span>
-        <span class="contacts__phone"></span>
-        <span class="contacts__schedule"></span>
-        <span class="contacts__email"></span>
-        <div class="contacts__socials socials">
-            <ul class="socials__list">
-                <li class="socials__item">
-                    <a class="socials__link"></a>
+    <div class="container">
+        <div class="footer__wrapper">
+            <a class="footer__logo logo">
+                <img class="logo__image" src="" alt="Надпись HouseVOP.">
+                <span>ЖИЛОЙ КОМПЛЕКС</span>
+            </a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link">О комплексе</a>
                 </li>
-                <li class="socials__item">
-                    <a class="socials__link"></a>
+                <li class="footer__item">
+                    <a class="footer__link">Район</a>
                 </li>
-                <li class="socials__item">
-                    <a class="socials__link"></a>
+                <li class="footer__item">
+                    <a class="footer__link">Каталог квартир</a>
                 </li>
-                <li class="socials__item">
-                    <a class="socials__link"></a>
+                <li class="footer__item">
+                    <a class="footer__link">Ипотека</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Контакты</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">О комплексе</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Район</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Каталог квартир</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Ипотека</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Контакты</a>
                 </li>
             </ul>
+            <div class="footer__contacts contacts">
+                <span class="contacts__address"></span>
+                <span class="contacts__phone"></span>
+                <span class="contacts__schedule"></span>
+                <span class="contacts__email"></span>
+                <div class="contacts__socials socials">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a class="socials__link"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link"></a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
