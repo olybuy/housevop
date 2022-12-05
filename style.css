@@ -52,51 +52,138 @@ html {
     margin: 0 auto;
 }
 
+.header {
+    text-align: center;
+    min-height: 840px;
+    box-sizing: border-box;
+    background-image: url("img/bg-img.jpg");
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    padding-top: 30px;
+}
+
+.header__title {
+    padding-top: 200px;
+    margin: 0;
+    margin-bottom: 340px;
+    font-size: 48px;
+}
+
+.header__nav {
+    padding-top: 30px;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 100px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.header-contacts__item {
+    display: flex;
+    font-size: 18px;
+}
+
+.address__text::before {
+    width: 21px;
+    height: 21px;
+    padding-right: 15px;
+    content: url("img/placeholder.svg");
+}
+
+.phone__text::before {
+    width: 21px;
+    height: 21px;
+    padding-right: 15px;
+    content: url("img/phone-call.svg");
+}
+
 .logo {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .logo__note {
     font-size: 12px;
+    letter-spacing: .07rem;
 }
 
 .nav__list {
     display: flex;
+    gap: 40px;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
 .nav__link {
+    display: block;
+    padding: 25px 0;
     font-size: 14px;
-}
-
-.header__wrapper {
-    display: flex;
-}
-
-.header__title {
-    font-size: 48px;
-}
-
-.header__contacts {
-    display: flex;
-}
-
-.header__address {
-    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .advantages {
-    font-family: "Roboto-Light", Arial, serif;
+    font-family: 'Roboto-Light', sans-serif;
+    min-height: 420px;
 }
 
 .advantages__list {
-    display: flex;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 193px 133px 134px 124px;
+    gap: 70px;
+    margin: 0 auto;
+    padding: 120px 0;
     list-style-type: none;
+    max-width: 794px;
+    text-align: center;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.park::before {
+    display: block;
+    margin-bottom: 53px;
+    width: 80px;
+    height: 80px;
+    content: url("img/bench.svg");
+}
+
+.infrastructure::before {
+    display: block;
+    margin-bottom: 53px;
+    width: 80px;
+    height: 80px;
+    content: url("img/building.svg");
+}
+
+.fountains:before {
+    display: block;
+    margin-bottom: 53px;
+    width: 80px;
+    height: 80px;
+    content: url("img/fountain.svg");
+}
+
+.cycleways:before {
+    display: block;
+    margin-bottom: 53px;
+    width: 80px;
+    height: 80px;
+    content: url("img/bicycle.svg");
 }
 
 .advantages__item {

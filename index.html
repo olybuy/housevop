@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>House VOP</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body class="page">
 <header class="page__header header">
     <div class="container">
         <div class="header__wrapper">
             <a class="header__logo logo">
-                <img class="logo__image" src="" alt="Надпись HouseVOP.">
+                <img class="logo__image" src="img/logo.svg" width="134" height="37" alt="Надпись HouseVOP.">
                 <span class="logo__note">ЖИЛОЙ КОМПЛЕКС</span>
             </a>
             <nav class="header__nav nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link">О комплексе</a>
+                        <a class="nav__link" href="#">О комплексе</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">Район</a>
+                        <a class="nav__link" href="#">Район</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">Каталог квартир</a>
+                        <a class="nav__link" href="#">Каталог квартир</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">Ипотека</a>
+                        <a class="nav__link" href="#">Ипотека</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link">Контакты</a>
+                        <a class="nav__link" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <h1 class="header__title title">Жилой комплекс в историческом центре</h1>
-        <div class="header__contacts">
-            <span class="header__address">Наб. реки Фонтанки 10-15</span>
-            <span class="header__phone">8 (812) 123-45-67</span>
+        <h1 class="header__title title">Жилой комплекс<br/> в историческом центре</h1>
+        <div class="header__contacts header-contacts">
+            <div class="header-contacts__item address">
+                <span class="address__text">Наб. реки Фонтанки 10-15</span>
+            </div>
+            <div class="header-contacts__item phone">
+                <span class="phone__text">8 (812) 123-45-67</span>
+            </div>
         </div>
     </div>
 </header>
@@ -45,10 +50,14 @@
     <section class="main__advantages advantages">
         <div class="container">
             <ul class="advantages__list">
-                <li class="advantages__item">Рядом исторические парки и скверы</li>
-                <li class="advantages__item">Полностью обустроенный</li>
-                <li class="advantages__item">10 фонтанов на территории</li>
-                <li class="advantages__item">6 км велодорожек</li>
+                <li class="advantages__item park">
+                    Рядом исторические<br/> парки и скверы</li>
+                <li class="advantages__item infrastructure">
+                    Полностью обустроенный</li>
+                <li class="advantages__item fountains">
+                    10 фонтанов<br/> на территории</li>
+                <li class="advantages__item cycleways">
+                    6 км велодорожек</li>
             </ul>
         </div>
     </section>
@@ -127,7 +136,7 @@
     <div class="container">
         <div class="footer__wrapper">
             <a class="footer__logo logo">
-                <img class="logo__image" src="" alt="Надпись HouseVOP.">
+                <img class="logo__image" src="img/logo.svg" width="132" height="26" alt="Надпись HouseVOP.">
                 <span>ЖИЛОЙ КОМПЛЕКС</span>
             </a>
             <ul class="footer__list">
