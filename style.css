@@ -33,6 +33,7 @@
 
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .page {
@@ -100,14 +101,23 @@ html {
     font-size: 18px;
 }
 
-.address__text::before {
+.address::before {
     width: 21px;
     height: 21px;
     padding-right: 15px;
     content: url("img/placeholder.svg");
 }
 
-.phone__text::before {
+.phone__text a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.phone__text:hover a {
+    color: #D4C17F;
+}
+
+.phone::before {
     width: 21px;
     height: 21px;
     padding-right: 15px;
@@ -139,6 +149,14 @@ html {
     font-size: 14px;
     color: #ffffff;
     text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #D4C17F;
+}
+
+.nav__link:active {
+    color: #c1a546;
 }
 
 .advantages {
@@ -249,6 +267,11 @@ html {
     position: relative;
 }
 
+.flat__link:hover .flat__title {
+    transform: scale(1.1);
+    color: #D4C17F;
+}
+
 .flat__title {
     position: absolute;
     bottom: 50px;
@@ -257,6 +280,7 @@ html {
     font-size: 24px;
     color: #ffffff;
     text-decoration: none;
+    transition: transform .2s;
 }
 
 .order {
@@ -319,6 +343,11 @@ html {
     color: #ffffff;
 }
 
+.order-form__input:hover,
+.order-form__input:focus {
+    outline: 1px solid #D4C17F;
+}
+
 .order-form__input::placeholder {
     font-size: 14px;
     line-height: 27px;
@@ -343,6 +372,14 @@ html {
     cursor: pointer;
 }
 
+.order-form__button:hover {
+    background-color: #c1a546;
+}
+
+.order-form__button:active {
+    background-color: #8b772f;
+}
+
 .video {
     position: relative;
     margin: 0 auto;
@@ -351,14 +388,17 @@ html {
     background-image: url("img/video.jpg");
 }
 
-.video::after {
+.video__button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    content: url("img/play-button.svg");
+    color: #D4C17F;
+    cursor: pointer;
+}
+
+.video__button:hover {
+    color: #c1a546;
 }
 
 .main__order {
@@ -437,6 +477,14 @@ html {
     text-decoration: none;
 }
 
+.footer__link:hover {
+    color: #D4C17F;
+}
+
+.footer__link:active {
+    color: #c1a546;
+}
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -450,6 +498,15 @@ html {
     font-family: "Raleway-Bold", sans-serif;
 }
 
+.contacts__phone a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contacts__phone:hover a {
+    color: #D4C17F;
+}
+
 .contacts__item {
     padding: 15px 0;
 }
@@ -461,6 +518,14 @@ html {
     margin-top: 13px;
     padding: 0;
     list-style-type: none;
+}
+
+.socials__link {
+    color: #ffffff;
+}
+
+.socials__link:hover {
+    color: #D4C17F;
 }
 
 .visually-hidden {
